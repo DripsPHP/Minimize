@@ -1,0 +1,14 @@
+{
+    "name": "drips/minimizecompiler",
+    "description": "MinimizeCompiler zum Komprimieren von CSS- und JavaScripts",
+    "keywords": ["css", "js", "minimize", "minifier", "uglify", "compress"],
+    "license": "MIT",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Drips\\MinimizeCompiler\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
