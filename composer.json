@@ -4,7 +4,8 @@
     "keywords": ["css", "js", "minimize", "minifier", "uglify", "compress"],
     "license": "MIT",
     "require": {
-        "matthiasmullie/minify": "^1.3"
+        "matthiasmullie/minify": "^1.3",
+        "drips/mvc": "dev-master"
     },
     "autoload": {
         "psr-4": {
