@@ -1,6 +1,6 @@
 <?php
 
-namespace Drips\MinimizeCompiler;
+namespace Drips\Minimize;
 
 use Drips\MVC\CompileController;
 
@@ -12,6 +12,6 @@ class JsController extends CompileController
 
     public function compile($content)
     {
-        return MinimizeCompiler::compile($content, MinimizeCompiler::JS);
+        return Compiler::compile($content, Compiler::JS);
     }
 }

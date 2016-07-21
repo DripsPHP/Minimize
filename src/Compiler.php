@@ -1,8 +1,8 @@
 <?php
 
-namespace Drips\MinimizeCompiler;
+namespace Drips\Minimize;
 
-class MinimizeCompiler
+class Compiler
 {
     const JS = 'MatthiasMullie\Minify\JS';
     const CSS = 'MatthiasMullie\Minify\CSS';
