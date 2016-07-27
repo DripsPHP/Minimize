@@ -5,12 +5,11 @@
     "license": "MIT",
     "require": {
         "matthiasmullie/minify": "^1.3",
-        "drips/mvc": "dev-master"
+        "drips/mvc": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Drips\\Minimize\\": "src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

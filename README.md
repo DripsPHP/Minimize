@@ -1,6 +1,6 @@
 # Minimize
 
-[![Build Status](https://travis-ci.org/Prowect/MinimizeCompiler.svg)](https://travis-ci.org/Prowect/MinimizeCompiler)
+[![Build Status](https://travis-ci.org/Prowect/Minimize.svg)](https://travis-ci.org/Prowect/Minimize)
 [![Code Climate](https://codeclimate.com/github/Prowect/MinimizeCompiler/badges/gpa.svg)](https://codeclimate.com/github/Prowect/MinimizeCompiler)
 [![Test Coverage](https://codeclimate.com/github/Prowect/MinimizeCompiler/badges/coverage.svg)](https://codeclimate.com/github/Prowect/MinimizeCompiler/coverage)
 [![Latest Release](https://img.shields.io/packagist/v/drips/Minimize.svg)](https://packagist.org/packages/drips/minimize)
