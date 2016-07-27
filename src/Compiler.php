@@ -9,7 +9,7 @@ class Compiler
 
     public static function compile($string, $type)
     {
-        if($type == static::JS || $type == static::CSS){
+        if ($type == static::JS || $type == static::CSS) {
             $compiler = new $type($string);
             return $compiler->minify();
         }

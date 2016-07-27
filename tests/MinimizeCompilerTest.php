@@ -2,8 +2,8 @@
 
 namespace tests;
 
-use PHPUnit_Framework_TestCase;
 use Drips\Minimize\Compiler;
+use PHPUnit_Framework_TestCase;
 
 class MinimizeCompilerTest extends PHPUnit_Framework_TestCase
 {
