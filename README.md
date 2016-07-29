@@ -11,6 +11,20 @@ Compiler basierend auf Minifier zum Komprimieren von CSS- und JavaScript-Dateien
 
 ## Verwendung
 
+Die Datei musss im Verzeichnis ganz außen angelegt werden. Durch das Aufrufen der Seite wird die Datei komprimiert.
+
+
+```php
+<?php
+
+/css/{file}.css ….
+/blbla/{file}.abc
+
+css/{file}.css
+source_directory/{file}.file_extension
+```
+
+
 ### CSS komprimieren
 
 ```php
@@ -18,7 +32,7 @@ Compiler basierend auf Minifier zum Komprimieren von CSS- und JavaScript-Dateien
 
 use Drips\Minimize\Compiler;
 
-$minified = Compiler::compile($css_code, Compiler::CSS);
+$router->add('css', '/css/{file}.css', Drips\Minimize\CssController::class)
 ```
 
 ### JS komprimieren
@@ -28,5 +42,5 @@ $minified = Compiler::compile($css_code, Compiler::CSS);
 
 use Drips\Minimize\Compiler;
 
-$minified = Compiler::compile($js_code, Compiler::JS);
+$router->add('js', '/js/{file}.js', Drips\Minimize\JsController::class)
 ```
