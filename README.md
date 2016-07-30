@@ -23,7 +23,7 @@ Die Datei musss im Verzeichnis ganz außen angelegt werden. Durch das Aufrufen d
 css/{file}.css
 source_directory/{file}.file_extension
 ```
-
+Außerdem besteht die Möglichkeit eine Route anzulegen. Die Dateien werden somit automatisch ausgeliefert und übersetzt.
 
 ### CSS komprimieren
 
