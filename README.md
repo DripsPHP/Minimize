@@ -9,33 +9,48 @@
 
 Compiler basierend auf Minifier zum Komprimieren von CSS- und JavaScript-Dateien.
 
-## Verwendung
+Durch den mitgelieferten Compiler kann ganz leicht CSS- und JavaScript-Code komprimiert werden.
 
-Die Datei musss im Verzeichnis ganz außen angelegt werden. Durch das Aufrufen der Seite wird die Datei komprimiert.
-
-
-```php
-<?php
-
-/css/{file}.css ….
-/blbla/{file}.abc
-
-css/{file}.css
-source_directory/{file}.file_extension
-```
-Außerdem besteht die Möglichkeit eine Route anzulegen. Die Dateien werden somit automatisch ausgeliefert und übersetzt.
-
-### CSS komprimieren
+**Beispiel: CSS komprimieren**
 
 ```php
 <?php
 
 use Drips\Minimize\Compiler;
 
+$minimizedCSS = Compiler::compile($css, Compiler::CSS);
+```
+
+**Beispiel: JS komprimieren**
+
+```php
+<?php
+
+use Drips\Minimize\Compiler;
+
+$minimizedJS = Compiler::compile($js, Compiler::JS);
+```
+
+## Automatische Übersetzung
+
+Zusätzlich wird ein Controller zum Automatischen Übersetzen und Ausliefern von CSS- und JavaScript-Dateien zur Verfügung gestellt. Dieser kann wie folgt verwendet werden.
+
+### CSS-Komprimierung
+
+In deinem `DRIPS` Verzeichnis legst du zunächst ein Verzeichnis `css` an. In diesem befinden sich alle deine CSS-Dateien, die du später gerne komprimiert ausliefern möchtest.
+Anschließend musst du den jeweiligen Controller als Route registrieren, dass die Datei automatisch ausgeliefert werden kann.
+
+```php
+<?php
+
 $router->add('css', '/css/{file}.css', Drips\Minimize\CssController::class)
 ```
 
-### JS komprimieren
+### JS-Komprimierung
+
+In deinem `DRIPS` Verzeichnis legst du zunächst ein Verzeichnis `js` an. In diesem befinden sich alle deine JavaScript-Dateien, die du später gerne komprimiert ausliefern möchtest.
+Anschließend musst du den jeweiligen Controller als Route registrieren, dass die Datei automatisch ausgeliefert werden kann.
+
 
 ```php
 <?php
